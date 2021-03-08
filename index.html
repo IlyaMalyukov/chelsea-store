@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://use.fontawesome.com/c442b38ddf.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <nav class="menu">
+                <button class="toggle" id="toggleMenu"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                <div class="menu__categories">
+                    <button class="menu-item" id="btnAllProducts">Все товары</button>
+                   <button class="menu-item" id="btnTshirt">Футболки</button>
+                   <button class="menu-item" id="btnComplect">Комплекты</button>
+
+                </div>
+                <button class="cartLink" id="cartLink">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                </button>
+            </nav>
+        </header>
+        
+        <main>
+            <div class="description" id="mainDescription">
+                <h1>Добро пожаловать на Chelsea Store</h1>
+                <h2>Атрибутика Chelsea FC</h2>
+                <h2>Все товары</h2>
+            </div>
+
+            <div id="catalog" class="catalog"></div>
+        </main>
+        
+    </div>
+
+    <div class="modal-menu" id="modalMenu">
+        <div class="modal-menu__container">
+            <ul>
+                <li><button class="modal-menu__close" id="modalMenuClose">✕</button></li>
+                <div class="modal-menu__items">
+                    <li><button class="modal-menu__item" id="modalBtnAllProducts">Все товары</button></li>
+                    <li><button class="modal-menu__item" id="modalBtnTshirt">Футболки</button></li>
+                    <li><button class="modal-menu__item" id="modalBtnComplect">Комплекты</button></li>
+                </div>
+            </ul>
+        </div>    
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal__window">
+            <p class="modal__window_close" id="modalClose">✕</p>
+            <div class="modal__window_container">
+                <h2 class="modal__window_title">Корзина</h2>
+                    <ul id="cartProducts" class="modal__window_cart">
+                        
+                    </ul>
+                    <div class="modal__window_buttons">
+                        <span id="totalCart"></span>
+                        <button disabled=true id="buy">Оформить заказ</button>
+                        <br>
+                        <button disabled=true id="deleteProducts">Очистить корзину</button>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modalProduct"></div>
+
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+
+    <!--Корзина-->
+    <script src="components/cart/cart.js"></script>
+    <link rel="stylesheet" href="components/cart/cart.css">
+
+    <!--Каталог-->
+    <script src="components/catalog/catalog.js"></script>
+    <link rel="stylesheet" href="components/catalog/catalog.css">
+</body>
+</html>

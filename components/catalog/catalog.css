@@ -1,0 +1,160 @@
+.catalog {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+
+}
+
+.catalog img {
+    width: 200px;
+    margin: 0 auto;
+}
+
+
+.card {
+    width: 250px;
+    background:  cornflowerblue;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    color: white;
+}
+
+.card:hover {
+    background: rgb(4, 92, 255);
+    cursor: pointer;
+    opacity: .75;
+}
+
+.btnToCart {
+    font-size: x-large;
+    background: cornflowerblue;
+    margin: auto 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+
+.btnToCart:hover {
+    background: rgb(55, 119, 238);
+    color: whitesmoke;
+}
+
+.btnToCart:active {
+    background: rgb(238, 235, 235);
+    color:rgba(55, 119, 238, 0.774);
+}
+
+.btnViewProduct {
+    font-size: x-large;
+    color: cornflowerblue;
+    margin: auto 10px;
+    border: none;
+    border-radius: 5px;
+    background: white;
+    margin-bottom: 10px;
+}
+
+.btnViewProduct:hover {
+    background: whitesmoke;
+    color: rgb(55, 119, 238);
+}
+
+.btnViewProduct:active {
+    background: rgb(238, 235, 235);
+    color:rgba(55, 119, 238, 0.774);
+}
+
+.modalProduct {
+    background: rgba(0, 0, 0, .8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalProduct__window {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 500px;
+    min-height: 500px;
+    background: white;
+    border-radius: 10px;
+    padding: 10px 30px;
+}
+
+.modalProduct__window_description {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: cornflowerblue;
+}
+
+.modalProduct__window_description h3 {
+    color: rgb(175, 203, 255);
+}
+
+.modalProduct__window img {
+    max-width: 300px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    text-align: right;
+}
+
+.modalProduct__window_close {
+    width: 10px;
+    float: right;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: cornflowerblue;
+    font-size: large;
+    padding: 0;
+    margin-top: 15px;
+    margin-left: 280px;
+    margin-right: 0;
+}
+
+.modalProduct__window span {
+    color: cornflowerblue;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.modalProduct__window_input {
+    color: cornflowerblue;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.modalProduct__window_input select{
+    color: cornflowerblue;
+    border-color: cornflowerblue;
+    border-radius: 5px;
+    background: white;
+    outline: none;
+ }
+
+.modalProduct__window_input option{
+   color: cornflowerblue;
+}
+
+.modal__window_product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:  cornflowerblue;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}

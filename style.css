@@ -1,0 +1,157 @@
+body {
+    background: rgb(188, 204, 255);
+    font-family: sans-serif;
+}
+
+button {
+    outline: none;
+}
+
+header {
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+nav {
+    width: 80%;
+}
+
+main {
+    text-align: center;
+    width: 100%;
+    color: cornflowerblue;
+}
+
+button {
+    margin-bottom: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.menu {
+    background:  cornflowerblue;
+    border-radius: 5px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+
+.menu-item {
+    border: none;
+    border-bottom: white 2px solid;
+    color: white;
+    background:  cornflowerblue;
+    font-size: large;
+}
+
+.menu-item:hover {
+    color: whitesmoke;
+    border-bottom: whitesmoke 1px solid;
+}
+
+.menu-item:active {
+    color: floralwhite;
+    border-bottom: cornflowerblue 1px solid;
+}
+
+.toggle {
+    display: none;
+    font-size: x-large;
+    color: white;
+    margin: auto 10px;
+    border: 2px solid  white;
+    border-radius: 5px;
+    background:  cornflowerblue;
+}
+
+.fa-bars {
+    font-size: x-large;
+    
+}
+
+.modal-menu {
+    background: cornflowerblue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: none;
+}
+
+.modal-menu__container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.modal-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.modal-menu__close {
+    border: none;
+    color: white;
+    background: rgba(0, 0, 0, .0);
+    font-size: xx-large;
+    margin-bottom: 50px;
+}
+
+.modal-menu__items {
+    text-align: center;
+}
+
+.modal-menu__item {
+    border: none;
+    border-bottom: 1px white solid;
+    background: rgba(0, 0, 0, .0);
+    color: white;
+    font-size: xx-large;
+    margin-bottom: 35px;
+}
+
+
+
+
+@media(max-width: 930px) {
+
+    .catalog {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media(max-width: 920px) {
+    .menu__categories {
+        display: none;
+    }
+
+    .toggle {
+        display: block;
+    }
+}
+
+@media(max-width: 600px) {
+
+    .catalog {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .modalProduct__window_description  {
+        flex-direction: column;
+    }
+
+}
